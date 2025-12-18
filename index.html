@@ -756,7 +756,7 @@
           <div>
             <div class="badge">
               <span class="badge-dot" aria-hidden="true"></span>
-              <span>Silk Road vibes • cosmic arcade • 10th grade builds</span>
+              <span>Silk Road vibes • game arcade • Bexruz builds</span>
             </div>
 
             <h1 class="title" id="title" title="(Easter egg: click 3x)">
@@ -764,7 +764,7 @@
             </h1>
 
             <p class="tagline">
-              Uzbek coder's arcade – <strong>500+ plays</strong> across homemade browser battles.
+              Uzbek coder's arcade – <strong>1800+ plays</strong> across 4 homemade browser battles.
               Rice grains drift up… then <em>snap</em> into pixels.
             </p>
 
@@ -808,8 +808,8 @@
       <div class="container">
         <div class="foot">
           <div>
-            Built by <strong id="yourName">Your Name</strong>, Tashkent •
-            <span style="color: rgba(255,255,255,.75)">Evolving to AI like Mulktahlilchi</span>
+            Built by <strong id="yourName">Bexruz</strong>, Tashkent •
+            <span style="color: rgba(255,255,255,.75)">Making learning experience fun and engaging</span>
           </div>
           <div class="social" id="social">
             <a class="icon-btn" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -831,18 +831,14 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script>
     // ---------- Data ----------
-    // To add real screenshots:
-    // - Put images in a folder like /assets/
-    // - Set img: "assets/ziyo-runner.jpg" (recommended 1200x900 or 800x600)
     const games = [
-      { id: "game1", title: "Ziyo Runner",   desc: "Endless runner with 200+ plays.", plays: 214, tag: "Runner",   url: "https://game1.example.com", img: "" },
-      { id: "game2", title: "Silk Dash",     desc: "Silk Road sprint through neon patterns.", plays: 118, tag: "Dash",    url: "https://game2.example.com", img: "" },
-      { id: "game3", title: "Tashkent Tilt", desc: "Gyro-style tilt maze with tight turns.", plays: 93,  tag: "Tilt",    url: "https://game3.example.com", img: "" },
-      { id: "game4", title: "Plov Panic",    desc: "Chaos cooking: dodge, chop, survive.", plays: 167, tag: "Arcade",  url: "https://game4.example.com", img: "" },
-      { id: "game5", title: "Byte Bazaar",   desc: "Trade pixels like a bazaar merchant.", plays: 71,  tag: "Strategy",url: "https://game5.example.com", img: "" },
+      { id: "game1", title: "Space Dodge", desc: "Navigate through space avoiding obstacles. Use arrow keys or WASD to move.", plays: 500, tag: "Arcade", url: "https://space-dodgee.netlify.app/", img: "space-dodge.png" },
+      { id: "game2", title: "Saperweb", desc: "Classic minesweeper reimagined for the web. Test your logic and strategy.", plays: 300, tag: "Puzzle", url: "https://saperweb.netlify.app/", img: "saperweb.png" },
+      { id: "game3", title: "Catch Falling Objects", desc: "Catch falling objects to score points. Red = 1pt, Green = 2pts, Black = Bomb!", plays: 400, tag: "Action", url: "https://catch-objects.netlify.app/", img: "catch-objects.png" },
+      { id: "game4", title: "Neon Runner", desc: "Endless neon runner with double-jump mechanics. Jump with Space or Up arrow.", plays: 600, tag: "Runner", url: "https://neon-runner.netlify.app/", img: "NEON-RUNNER.png" },
     ];
 
-    const ICONS = ["ZR","SD","TT","PP","BB"];
+    const ICONS = ["SD","SW","CF","NR"];
 
     // Inline SVG placeholder screenshots (4:3). Self-contained; no external images.
     const thumbSVG = (label, accent) => {
